@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pingmebg"
+    tools:context=".SignUpActivity">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="348dp"-->
+<!--        android:layout_height="309dp"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="369dp"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/registername"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:background="#F1EDED"-->
+<!--            android:backgroundTint="#F1EDED"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Name"-->
+<!--            android:inputType="textPersonName" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/registeremail"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:background="#F1EDED"-->
+<!--            android:backgroundTint="#F1EDED"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Email"-->
+<!--            android:inputType="textEmailAddress" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/registerpassword"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:background="#F1EDED"-->
+<!--            android:backgroundTint="#F1EDED"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Password"-->
+<!--            android:inputType="textPassword" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/registerconfirmpassword"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="#F1EDED"-->
+<!--            android:backgroundTint="#F1EDED"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Confirm Password"-->
+<!--            android:inputType="textPassword" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/registersignupbutton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:backgroundTint="#8AEBFF"-->
+<!--            android:onClick="registerButton"-->
+<!--            android:text="Register"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp" />-->
+<!--    </LinearLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/registername"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#F1EDED"
+                android:ems="10"
+
+                android:hint="Username"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/registerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#F1EDED"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/registerpassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#F1EDED"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/registerconfirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#F1EDED"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+
+            android:backgroundTint="#8AEBFF"
+            android:onClick="registrationButton"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

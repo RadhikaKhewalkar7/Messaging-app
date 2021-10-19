@@ -1,0 +1,137 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@drawable/allchatscreen"-->
+<!--    tools:context=".ChatList" >-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <ListView-->
+<!--            android:id="@+id/chatsListView"-->
+<!--            android:layout_width="414dp"-->
+<!--            android:layout_height="604dp"-->
+<!--            android:layout_marginTop="192dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:transcriptMode="alwaysScroll">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/listFooter"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="bottom">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/messageInput"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="fill_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#DDDDDD"-->
+<!--                    android:gravity="center"-->
+<!--                    android:hint="message"-->
+<!--                    android:imeActionLabel="Send"-->
+<!--                    android:imeOptions="actionUnspecified"-->
+<!--                    android:inputType="textCapSentences|textAutoCorrect"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHint="@color/black" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/sendButton"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:background="@drawable/circle_shape"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@android:drawable/ic_menu_send"-->
+<!--                    android:contentDescription="Send"/>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--                &lt;!&ndash;    </androidx.constraintlayout.widget.ConstraintLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;</androidx.coordinatorlayout.widget.CoordinatorLayout>&ndash;&gt;-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/white"
+    >
+
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+
+
+    <!--    <ListView-->
+<!--        android:id="listviewChat"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/listFooter"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:divider="@null"-->
+<!--        android:dividerHeight="0dp"-->
+<!--        android:transcriptMode="alwaysScroll" />-->
+
+    <ListView
+        android:id="@+id/chatsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listFooter"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="-4dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/listFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:hint="@string/prompt_msg"
+            android:imeActionLabel="@string/action_send"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#252323"
+            android:contentDescription="@string/action_send"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+
+
+</RelativeLayout>

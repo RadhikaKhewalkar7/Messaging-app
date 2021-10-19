@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pingmebg"
+    tools:context=".LoginScreen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="309dp"
+        android:layout_marginEnd="51dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp">
+            <!--        android:layout_width="341dp"-->
+            <!--        android:layout_height="371dp"-->
+            <!--        android:layout_marginStart="50dp"-->
+            <!--        android:layout_marginTop="371dp"-->
+            <!--        android:layout_marginEnd="50dp"-->
+            <!--        android:background="#FFFFFF"-->
+            <!--        android:orientation="vertical"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+            <!--        <EditText-->
+            <!--            android:id="@+id/loginemail"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="63dp"-->
+            <!--            android:layout_marginBottom="15dp"-->
+            <!--            android:background="#FFFFFF"-->
+            <!--            android:backgroundTint="#E8ECED"-->
+            <!--            android:ems="10"-->
+            <!--            android:hint="Email"-->
+            <!--            android:inputType="textEmailAddress" />-->
+
+            <!--        <EditText-->
+            <!--            android:id="@+id/loginpassword"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="61dp"-->
+            <!--            android:layout_marginBottom="15dp"-->
+            <!--            android:background="#8AEBFF"-->
+            <!--            android:backgroundTint="#E8ECED"-->
+            <!--            android:ems="10"-->
+            <!--            android:hint="Password"-->
+            <!--            android:inputType="textPassword" />-->
+
+            <!--        <Button-->
+            <!--            android:id="@+id/registerloginButton"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="84dp"-->
+            <!--            android:backgroundTint="#8AEBFF"-->
+            <!--            android:onClick="logInButton"-->
+            <!--            android:text="Log In"-->
+            <!--            android:textColor="#171717"-->
+            <!--            android:textSize="20sp" />-->
+
+            <!--        <Button-->
+            <!--            android:id="@+id/registernewuserButton"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="84dp"-->
+            <!--            android:backgroundTint="#8AEBFF"-->
+            <!--            android:onClick="NewRegisterButton"-->
+            <!--            android:text="Register"-->
+            <!--            android:textColor="#171717"-->
+            <!--            android:textSize="20sp" />-->
+            <EditText
+                android:id="@+id/loginemail"
+                android:layout_width="325dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:width="310dp"
+                android:height="60dp"
+                android:background="#8AEBFF"
+                android:backgroundTint="#8AEBFF"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/loginpassword"
+                android:layout_width="310dp"
+                android:layout_height="60dp"
+
+                android:layout_weight="1"
+                android:background="#8AEBFF"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/register_sign_up_button"
+            android:layout_width="310dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#8AEBFF"
+            android:onClick="logInButton"
+            android:text="Log In"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login_register_button"
+            android:layout_width="305dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:background="#8AEBFF"
+            android:onClick="NewRegisterButton"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

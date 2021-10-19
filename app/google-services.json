@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "697594300717",
+    "project_id": "pingme-96de0",
+    "storage_bucket": "pingme-96de0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697594300717:android:4df1a4fe0dfacbba476ba4",
+        "android_client_info": {
+          "package_name": "com.radhikakhewalkarr.pingme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697594300717-6m8vtqab2uavnpscblkg167aaappdhmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxgg5SC-yN3b-apsF7iO1pv9ujea3eM_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697594300717-6m8vtqab2uavnpscblkg167aaappdhmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
